@@ -382,8 +382,12 @@ thead {
   color: #4d4d4d;
 }
 
-th, td {
+thead th, td {
   padding: 1rem;
+}
+
+tbody th, td {
+  padding: 0.5rem;
 }
 
 th, td {

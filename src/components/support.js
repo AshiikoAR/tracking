@@ -4,56 +4,45 @@ function Support() {
     return (
         <div className="box-menu">
             <div>
-                <h2><span style={{color:"red", fontWeight:"bolder"}}>[ACTI]</span> &bull; Choix d'une activité *</h2>
+                <h2><span style={{color:"red", fontWeight:"bolder"}}>[HELP]</span> &bull; Contacter le service support</h2>
             </div>
-            <fieldset>
-                <legend>&ensp;<b>Plage horaire</b>&ensp;</legend>
-                <div>
-                    <label htmlFor="filtre">
-                        <b>Plage horaire sélectionnée &bull;</b>
-                        <select id="filtre" name="filtre">
-                            <option value="none">--</option>
-                            <option value="">Quart matin</option>
-                            <option value="">Journée normale</option>
-                            <option value="">Quart soir</option>
-                            <option value="">Nuit</option>
-                            <option value="">Formation</option>
-                        </select>
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>&ensp;<b>Activité</b>&ensp;</legend>
-                <div>
-                    <label htmlFor="filtre">
-                        <b>Activité sélectionnée &bull;</b>
-                        <select id="filtre" name="filtre">
-                            <option value="none">--</option>
-                            <option value="">Réception / Rangement / Expéditions</option>
-                            <option value="">Picking</option>
-                            <option value="">Consolidation</option>
-                            <option value="">Kardex</option>
-                            <option value="">Gestion ordonnancement</option>
-                            <option value="">Tamaris</option>
-                            <option value="">Quais distribution</option>
-                        </select>
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>&ensp;<b>Sous-activité</b>&ensp;</legend>
-                <div>
-                    <label htmlFor="filtre">
-                        <b>Sous-activité sélectionnée &bull;</b>
-                        <select id="filtre" name="filtre">
-                            <option value="none">--</option>
-                        </select>
-                    </label>
-                </div>
-            </fieldset>
             <div>
-                <input type="button" value="&#128190; Débuter la sous-activité" onClick={() => {}} />
-                <p>&#128161; * Saisir les informations via liste déroulante ou scanner de code-barre</p>
+                <h3>RAGUIN Alexandre | Développeur - Alternant amélioration continue</h3>
+                <ul>
+                    <li>&#128238; &bull; &ensp;
+                        <a href="mailto:a.raguin@daher.com?cc=r.delon@daher.com&subject=%5BTRACKING%5D%20-%20Demande%20de%20support">
+                            Par mail : a.raguin@daher.com
+                        </a>
+                    </li>
+                    <li>&#128222; &bull; &ensp;
+                        <a href="tel:+33617518909">
+                            Par Téléphone : +33 6 17 51 89 09
+                        </a>
+                    </li>
+                    <li>&#128241; &bull; &ensp;
+                        <a href="https://teams.microsoft.com/l/chat/0/0?users=a.raguin@daher.com">
+                            Via Microsoft Teams : Alexandre RAGUIN
+                        </a>
+                    </li>
+                </ul>
+                <h3>DELON Romain | Développeur - Ingénieur amélioration continue</h3>
+                <ul>
+                    <li>&#128238; &bull; &ensp;
+                        <a href="mailto:r.delon@daher.com?cc=a.raguin@daher.com&subject=%5BTRACKING%5D%20-%20Demande%20de%20support">
+                            Par mail : r.delon@daher.com
+                        </a>
+                    </li>
+                    <li>&#128222; &bull; &ensp;
+                        <a href="tel:+33752641188">
+                            Par téléphone : +33 7 52 64 11 88
+                        </a>
+                    </li>
+                    <li>&#128241; &bull; &ensp;
+                        <a href="https://teams.microsoft.com/l/chat/0/0?users=r.delon@daher.com">
+                            Via Microsoft Teams : Romain DELON
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     );
