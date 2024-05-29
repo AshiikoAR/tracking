@@ -207,3 +207,139 @@ button[type="submit"]:hover {
 .PortailTxt h2 {
   margin-right: 1.2rem;
 }
+
+.error-message {
+  color:red;
+  font-weight: bold;
+  position: fixed;
+  bottom: 4.4rem;
+  text-align: center;
+  filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+}
+
+.connexion-ope {
+  background-color: #002E5D;
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: #383838 0.1rem solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.connexion-ope .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.connexion-ope .nav button {
+  width: 100%;
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+
+.connexion-ope .nav button:hover {
+  border: #000 0.2rem solid;
+  background-color: #01203f;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.connexion-ope .ope {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  text-align: right;
+}
+
+.connexion-ope .ope .infos-ope{
+  margin: 0 0.4rem 0.6rem 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #fff;
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 50%;
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.connexion-ope .ope .infos-ope:hover{
+  border:#000 0.2rem solid;
+  background-color: #f5f5f5;
+}
+
+.infos-ope span {
+  display: none;
+}
+  
+.infos-ope:hover span {
+  display: block;
+  position: absolute;
+  top: 5.4rem;
+  right: 8rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #4d4d4d;
+  font-weight: normal;
+  width: 20rem;
+  background: white;
+  padding: 5px;
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.connexion-ope .ope button {
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 0.8rem 0.4rem 0.8rem 0.4rem;
+  cursor: pointer;
+}
+
+.connexion-ope .ope button:hover {
+  border: #000 0.2rem solid;
+  background-color: #01203f;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.logo-tracking-title {
+  height: 5.5rem;
+}
+
+.menu-title {
+  color: #fff;
+  margin: auto;
+  margin-left: 0.2rem;
+}
+
+.logo-daher-title {
+  height: 6rem;
+}
+
+.choix-acti {
+  background-color: #fff;
+  border-radius:1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.1rem 2rem 0.1rem 2rem;
+  margin: 2rem;
+}
+
+select {
+  color: #4d4d4d;
+  height: 3rem;
+  font-weight: bold;
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  font-size: 1.5rem;
+}
