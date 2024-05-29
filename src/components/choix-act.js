@@ -4,7 +4,7 @@ function ChoixAct() {
     return (
         <div className="box-menu">
             <div>
-                <h2><span style={{color:"red", fontWeight:"bolder"}}>[ACTI]</span> &bull; Choix d'une activité *</h2>
+                <h2>&#128679; &bull; Choix d'une activité *</h2>
             </div>
             <fieldset>
                 <legend>&ensp;<b>&#128339; &bull; Plage horaire</b>&ensp;</legend>
