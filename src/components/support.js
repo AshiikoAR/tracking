@@ -2,7 +2,7 @@ import React from "react";
 
 function Support() {
     return (
-        <div className="support-box">
+        <div className="half-box">
             <div className="box-menu">
                 <div>
                     <h2>&#128735; &bull; Contacter le service support</h2>

@@ -360,6 +360,18 @@ button[type="submit"]:hover {
   cursor: default;
 }
 
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label b {
+  width:40%;
+  text-align: right;
+}
 select {
   color: #4d4d4d;
   height: 3rem;
@@ -368,6 +380,7 @@ select {
   border-radius: 0.4rem;
   padding: 0.4rem;
   font-size: 1.5rem;
+  width: 60%;
 }
 
 .loca-btn {
@@ -504,13 +517,13 @@ tbody > tr:nth-of-type(even) {
   color: #1372d1;
 }
 
-.support-box {
+.half-box {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 9rem;
 }
 
-.support-box .box-menu {
+.half-box .box-menu {
   width: 50%;
 }
+
