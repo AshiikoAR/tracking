@@ -7,7 +7,7 @@ function ChoixAct() {
                 <h2><span style={{color:"red", fontWeight:"bolder"}}>[ACTI]</span> &bull; Choix d'une activité *</h2>
             </div>
             <fieldset>
-                <legend>&ensp;<b>Plage horaire</b>&ensp;</legend>
+                <legend>&ensp;<b>&#128339; &bull; Plage horaire</b>&ensp;</legend>
                 <div>
                     <label htmlFor="filtre">
                         <b>Plage horaire sélectionnée &bull;</b>
@@ -23,7 +23,7 @@ function ChoixAct() {
                 </div>
             </fieldset>
             <fieldset>
-                <legend>&ensp;<b>Activité</b>&ensp;</legend>
+                <legend>&ensp;<b>&#128736;&#65039; &bull; Activité</b>&ensp;</legend>
                 <div>
                     <label htmlFor="filtre">
                         <b>Activité sélectionnée &bull;</b>
@@ -41,7 +41,7 @@ function ChoixAct() {
                 </div>
             </fieldset>
             <fieldset>
-                <legend>&ensp;<b>Sous-activité</b>&ensp;</legend>
+                <legend>&ensp;<b>&#9881;&#65039; &bull; Sous-activité</b>&ensp;</legend>
                 <div>
                     <label htmlFor="filtre">
                         <b>Sous-activité sélectionnée &bull;</b>

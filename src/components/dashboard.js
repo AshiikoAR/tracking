@@ -1,28 +1,19 @@
 import React, { useState, useEffect } from "react";
-
 import logo from '../img/tracking-icon.png'; 
 import ChoixAct from "./choix-act";
 import Avancement from "./av-ope";
 import Support from "./support";
 
+
 function Dashboard({ user }) {
-    const [selectedComponent, setSelectedComponent] = useState("Accueil"); // État pour suivre le composant sélectionné
+    const [selectedComponent, setSelectedComponent] = useState("Accueil");
 
     const handleLogout = () => {
         window.location.href = ""; // Redirection vers l'interface de connexion
     };
 
-    const renderComponent = (component) => {
-        switch (component) {
-            case "Accueil": return <ChoixAct />;
-            case "Avancement": return <Avancement />;
-            case "Support": return <Support />;
-            default: return <ChoixAct />;
-        }
-    };
-
     useEffect(() => {
-        document.title = `TRACKING - ${selectedComponent}`; // Mettre à jour le titre de l'onglet
+        document.title = `TRACKING - ${selectedComponent}`;
     }, [selectedComponent]);
 
     return (
@@ -39,7 +30,13 @@ function Dashboard({ user }) {
                     <button onClick={handleLogout}>&#128268; Déconnexion</button>
                 </span>
             </div>
-            {renderComponent(selectedComponent)}
+            {/* Wrapper pour les composants avec la barre de défilement */}
+            <div className="scrollable-content">
+                {/* Affichage du composant correspondant au bouton sélectionné */}
+                {selectedComponent === "Accueil" && <ChoixAct />}
+                {selectedComponent === "Avancement" && <Avancement />}
+                {selectedComponent === "Support" && <Support />}
+            </div>
         </div>
     );
 }
