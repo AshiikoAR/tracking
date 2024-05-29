@@ -7,11 +7,10 @@ function ChoixAct() {
                 <div>
                     <h2>&#128679; &bull; Choix d'une activité *</h2>
                 </div>
-                <fieldset>
-                    <legend>&ensp;<b>&#128339; &bull; Plage horaire</b>&ensp;</legend>
+                <form>
                     <div>
+                        <b>&#128339; &bull; Plage horaire</b>
                         <label htmlFor="filtre">
-                            <b>Plage horaire sélectionnée &bull;&nbsp;</b>
                             <select id="filtre" name="filtre">
                                 <option value="none">--</option>
                                 <option value="">Quart matin</option>
@@ -22,12 +21,9 @@ function ChoixAct() {
                             </select>
                         </label>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>&ensp;<b>&#128736;&#65039; &bull; Activité</b>&ensp;</legend>
                     <div>
+                        <b>&#128736;&#65039; &bull; Activité</b>
                         <label htmlFor="filtre">
-                            <b>Activité sélectionnée &bull;&nbsp;</b>
                             <select id="filtre" name="filtre">
                                 <option value="none">--</option>
                                 <option value="">Réception / Rangement / Expéditions</option>
@@ -40,22 +36,19 @@ function ChoixAct() {
                             </select>
                         </label>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>&ensp;<b>&#9881;&#65039; &bull; Sous-activité</b>&ensp;</legend>
                     <div>
+                        <b>&#9881;&#65039; &bull; Sous-activité</b>
                         <label htmlFor="filtre">
-                            <b>Sous-activité sélectionnée &bull;&nbsp;</b>
                             <select id="filtre" name="filtre">
                                 <option value="none">--</option>
                             </select>
                         </label>
                     </div>
-                </fieldset>
-                <div>
-                    <input type="button" value="&#128190; Débuter la sous-activité" onClick={() => {}} />
-                    <p>&#128161; * Saisir les informations via liste déroulante ou scanner de code-barre</p>
-                </div>
+                    <div>
+                        <input type="button" value="&#128190; Débuter la sous-activité" onClick={() => {}} />
+                        <p>&#128161; * Saisir les informations via liste déroulante ou scanner de code-barre</p>
+                    </div>
+                </form>
             </div>
             <div className="box-menu">
                 <div>

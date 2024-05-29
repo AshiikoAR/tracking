@@ -360,27 +360,27 @@ button[type="submit"]:hover {
   cursor: default;
 }
 
-label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.box-menu form {
+  font-size: 2rem;
 }
 
-label b {
-  width:40%;
-  text-align: right;
+.box-menu form div {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 select {
   color: #4d4d4d;
-  height: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
   border: #4d4d4d 0.2rem solid;
   border-radius: 0.4rem;
-  padding: 0.4rem;
-  font-size: 1.5rem;
-  width: 60%;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .loca-btn {
@@ -526,4 +526,3 @@ tbody > tr:nth-of-type(even) {
 .half-box .box-menu {
   width: 50%;
 }
-
