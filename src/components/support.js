@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChoixAct() {
+function Support() {
     return (
         <div className="box-menu">
             <div>
@@ -59,4 +59,4 @@ function ChoixAct() {
     );
 }
 
-export default ChoixAct;
+export default Support;
