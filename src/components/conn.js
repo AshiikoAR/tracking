@@ -3,7 +3,7 @@ import logo from '../img/tracking-icon.png';
 import daher from '../img/daher.png';
 import fond from '../img/fond.jpg';
 
-import Dashboard from "./dashboard";
+import DashboardOpe from "./dashboard-ope";
 
 function Conn({ dataOpe }) {
   const [inputValue, setInputValue] = useState("");
@@ -29,7 +29,7 @@ function Conn({ dataOpe }) {
   };
 
   if (showDashboard) {
-    return <Dashboard user={currentUser} />;
+    return <DashboardOpe user={currentUser} />;
   }
 
   return (

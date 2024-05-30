@@ -38,10 +38,8 @@ function ChoixAct() {
                             <option value="none">--</option>
                         </select>
                     </div>
-                    <div className="choix">
-                        <input type="button" value="&#128190; Débuter la sous-activité" onClick={() => {}} />
-                        <p>&#128161; * Saisir les informations via liste déroulante ou scanner de code-barre</p>
-                    </div>
+                    <input type="button" className="choix" value="&#128190; Débuter la sous-activité" onClick={() => {}} />
+                    <label className="txt">&#128161; * Saisir les informations via liste déroulante ou scanner de code-barre</label>
                 </form>
             </div>
             <div className="box-menu">

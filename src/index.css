@@ -387,6 +387,31 @@ button[type="submit"]:hover {
   font-size: 1.8rem;
 }
 
+.choix {
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  width: 80%;
+  border: #4d4d4d 0.2rem solid;
+  border-radius: 0.4rem;
+  background-color: #cfcfcf;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.choix:hover {
+  border: #000 0.2rem solid;
+  background-color: #888;
+  color: #000;
+}
+
+.txt{
+  width: 100%;
+  text-align: end;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
 .loca-btn {
   display: flex;
   flex-direction: row;
@@ -410,7 +435,7 @@ button[type="submit"]:hover {
 
 table {
   width: 100%;
-  height: calc(100vh - 100%);
+  height: calc(96vh - 100%);
   border-spacing: 0;
   border-collapse: separate;
   border: #383838 0.2rem solid ;

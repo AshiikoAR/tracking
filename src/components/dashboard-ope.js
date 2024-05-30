@@ -5,7 +5,7 @@ import Avancement from "./av-ope";
 import Support from "./support";
 
 
-function Dashboard({ user }) {
+function DashboardOpe({ user }) {
     const [selectedComponent, setSelectedComponent] = useState("Accueil");
 
     const handleLogout = () => {
@@ -41,4 +41,4 @@ function Dashboard({ user }) {
     );
 }
 
-export default Dashboard;
+export default DashboardOpe;
