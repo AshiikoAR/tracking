@@ -3,7 +3,7 @@ import logo from '../img/tracking-icon.png';
 import daher from '../img/daher.png';
 import fond from '../img/fond.jpg';
 
-import DashboardOpe from "./dashboard-ope";
+import DashboardCtrl from "./dashboard-ctrl";
 
 function Conn({ dataOpe }) {
   const [inputValue, setInputValue] = useState("");
@@ -29,7 +29,7 @@ function Conn({ dataOpe }) {
   };
 
   if (showDashboard) {
-    return <DashboardOpe user={currentUser} />;
+    return <DashboardCtrl user={currentUser} />;
   }
 
   return (
@@ -56,7 +56,7 @@ function Conn({ dataOpe }) {
             onChange={handleChange}
           />
           <button type="submit">&#128279; Se connecter</button>
-          {errorMessage && <p className="error-message">{errorMessage}</p>}
+          {errorMessage && <p className="error-message">&#128680; {errorMessage}</p>}
         </form>
       </div>
       <div className="SelectPortail">
