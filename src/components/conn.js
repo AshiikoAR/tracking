@@ -1,8 +1,8 @@
+// conn.js
 import React, { useState } from "react";
 import logo from '../img/tracking-icon.png'; 
 import daher from '../img/daher.png';
 import fond from '../img/fond.jpg';
-
 import DashboardCtrl from "./dashboard-ctrl";
 
 function Conn({ dataOpe }) {
@@ -29,7 +29,7 @@ function Conn({ dataOpe }) {
   };
 
   if (showDashboard) {
-    return <DashboardCtrl user={currentUser} />;
+    return <DashboardCtrl user={currentUser} dataOpe={dataOpe} />;
   }
 
   return (

@@ -1,15 +1,22 @@
 import React from "react";
 
 function InfosKPI() {
+    // Get current date
+    const today = new Date();
+    
+    // Format the date to "DD MMM YYYY"
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    const formattedDate = today.toLocaleDateString('fr-FR', options);
+
     return (
-        <div className="half-box">
+        <div>
             <div className="box-menu">
                 <div>
                     <h2>&#128240; &bull; Bienvenue sur <u>TRACKING</u> !</h2>
                 </div>
                 <div className="help">
                     <p>
-                        "TRACKING" est une plateforme dédiée à la gestion efficace du temps. Elle offre une interface 
+                        "<b><i class='bx bxs-bar-chart-square'></i> TRACKING</b>" est une plateforme dédiée à la gestion efficace du temps. Elle offre une interface 
                         permettant aux opérateurs de consigner facilement le temps consacré à chaque activité/sous-activité. 
                         Elle propose également une interface de contrôle, offrant ainsi une vision globale de 
                         l'efficacité opérationnelle.
@@ -25,49 +32,24 @@ function InfosKPI() {
                     </p>
                 </div>
             </div>
-            <div className="box-menu">
+            <div className="box-menu" id="solo-title">
                 <div>
-                    <h2>&#128119; &bull; Opérateur / Activité en cours</h2>
+                    <h2>&#11015;&#65039; Indicateurs de performance &bull; <span>[{formattedDate}]</span> &#11015;&#65039;</h2>
                 </div>
-                <div className="loca-btn">
-                    <input 
-                        type="button" 
-                        className="actu-list" 
-                        value="&#128260;" 
-                        title="Actualiser la liste des activités en cours de réalisation." 
-                        onClick={() => {}} 
-                    />
+            </div>
+            <div className="third-half">
+                <div className="box-menu">
+                    <span className="logo">&#128119;</span>
+                    <h2><span>[xxx]</span> opérateurs</h2>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Nom &bull; Prénom</th>
-                            <th scope="col">Activité &bull; Sous-activité</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">TEST Test 1</th>
-                            <td>Picking &bull; 5e ligne Picking Pédestre</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">TEST Test 2</th>
-                            <td>Picking &bull; A320 AM Picking Pédestre</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">TEST Test 3</th>
-                            <td>Gestion ordonnancement &bull; Monitoring</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">TEST Test 4</th>
-                            <td>Quais distribution &bull; Layout</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">TEST Test 5</th>
-                            <td>Quais distribution &bull; Layout</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="box-menu">
+                    <span className="logo">&#9888;&#65039;</span>
+                    <h2><span>[xxx]</span> anomalies</h2>
+                </div>
+                <div className="box-menu">
+                    <span className="logo">&#128123;</span>
+                    <h2><span>[xxx]</span> absents</h2>
+                </div>
             </div>
         </div>
     );
