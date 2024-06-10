@@ -5,7 +5,7 @@ import InfosKPI from "./infos-kpi";
 import Recherche from "./rech";
 import Support from "./support";
 
-function DashboardCtrl({ user, dataOpe }) {
+function DashboardCtrl({ user, dataOpe, dataActi }) {
     const [selectedComponent, setSelectedComponent] = useState("Dashboard");
 
     const handleLogout = () => {
@@ -33,8 +33,8 @@ function DashboardCtrl({ user, dataOpe }) {
                 </span>
             </div>
             <div className="scrollable-content">
-                {selectedComponent === "Dashboard" && <InfosKPI />}
-                {selectedComponent === "Recherche" && <Recherche dataOpe={dataOpe}/>}
+                {selectedComponent === "Dashboard" && <InfosKPI dataOpe={dataOpe} />}
+                {selectedComponent === "Recherche" && <Recherche dataOpe={dataOpe} dataActi={dataActi} />}
                 {selectedComponent === "Support" && <Support />}
             </div>
         </div>

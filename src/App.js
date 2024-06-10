@@ -1,10 +1,10 @@
 import React from "react";
 import Conn from "./components/conn.js";
 
-function App({ dataOpe }) {
+function App({ dataOpe, dataActi}) {
   return (
     <div className="App">
-      <Conn dataOpe={dataOpe} />
+      <Conn dataOpe={dataOpe} dataActi={dataActi}/>
     </div>
   );
 }

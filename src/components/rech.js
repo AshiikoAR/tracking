@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ListOpe from "./list_ope";
 import ListAct from "./list_act";
 
-function Recherche({dataOpe}) {
+function Recherche({dataOpe, dataActi}) {
     // Use state to keep track of which list to show
     const [showList, setShowList] = useState('ope');
 
@@ -18,7 +18,7 @@ function Recherche({dataOpe}) {
                 </button>
             </div>
             {showList === 'ope' && <ListOpe dataOpe={dataOpe} />}
-            {showList === 'act' && <ListAct />}
+            {showList === 'act' && <ListAct dataActi={dataActi} />}
         </div>
     );
 }

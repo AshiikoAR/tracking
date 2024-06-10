@@ -1,12 +1,12 @@
 import React from "react";
 
-function InfosKPI() {
-    // Get current date
+function InfosKPI({ dataOpe }) {
     const today = new Date();
-    
-    // Format the date to "DD MMM YYYY"
     const options = { day: 'numeric', month: 'long', year: 'numeric' };
     const formattedDate = today.toLocaleDateString('fr-FR', options);
+
+    const numOperators = dataOpe.length;
+    const numAnomalies = dataOpe.filter(item => item.avancement < 80).length;
 
     return (
         <div>
@@ -16,7 +16,7 @@ function InfosKPI() {
                 </div>
                 <div className="help">
                     <p>
-                        "<b><i class='bx bxs-bar-chart-square'></i> TRACKING</b>" est une plateforme dédiée à la gestion efficace du temps. Elle offre une interface 
+                        "<b><i className='bx bxs-bar-chart-square'></i> TRACKING</b>" est une plateforme dédiée à la gestion efficace du temps. Elle offre une interface 
                         permettant aux opérateurs de consigner facilement le temps consacré à chaque activité/sous-activité. 
                         Elle propose également une interface de contrôle, offrant ainsi une vision globale de 
                         l'efficacité opérationnelle.
@@ -40,11 +40,11 @@ function InfosKPI() {
             <div className="third-half">
                 <div className="box-menu">
                     <span className="logo">&#128119;</span>
-                    <h2><span>[xxx]</span> opérateurs</h2>
+                    <h2><span>[{numOperators}]</span> opérateurs</h2>
                 </div>
                 <div className="box-menu">
                     <span className="logo">&#9888;&#65039;</span>
-                    <h2><span>[xxx]</span> anomalies</h2>
+                    <h2><span>[{numAnomalies}]</span> anomalies</h2>
                 </div>
                 <div className="box-menu">
                     <span className="logo">&#128123;</span>
