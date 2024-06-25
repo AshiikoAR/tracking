@@ -23,8 +23,8 @@ function DashboardCtrl({ user, dataOpe, dataActi }) {
                 <span className="nav">
                     <button className="menu-title" onClick={() => setSelectedComponent("Dashboard")}>&#128202; Dashboard</button>
                     <button className="menu-title" onClick={() => setSelectedComponent("Recherche")}>&#128269; Recherche</button>
-                    <button className="menu-title" onClick={() => setSelectedComponent("Support")}>&#9888;&#65039; Anomalies</button>
-                    <button className="menu-title" onClick={() => setSelectedComponent("Support")}>&#128123; Absences</button>
+                    <button className="menu-title" onClick={() => setSelectedComponent("Support")}>&#128200; Effectifs</button>
+                    <button className="menu-title" onClick={() => setSelectedComponent("Support")}>&#128342; Suivi journée</button>
                     <button className="menu-title" onClick={() => setSelectedComponent("Support")}>&#128735; Support</button>
                 </span>
                 <span className="ope">

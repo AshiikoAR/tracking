@@ -150,35 +150,67 @@ function ListOpe({ dataOpe }) {
                 </table>
             </div>
             {isEditing && selectedOpe && (
-                <div className="edit-form">
-                    <h3>Modifier Opérateur</h3>
-                    <form>
-                        <label>Nom:</label>
-                        <input type="text" name="nom" value={selectedOpe.nom} onChange={handleInputChange} />
-                        <label>Prénom:</label>
-                        <input type="text" name="prenom" value={selectedOpe.prenom} onChange={handleInputChange} />
-                        <label>Matricule:</label>
-                        <input type="text" name="matricule" value={selectedOpe.matricule} onChange={handleInputChange} />
-                        <label>NG SAP:</label>
-                        <input type="text" name="ng_sap" value={selectedOpe.ng_sap} onChange={handleInputChange} />
-                        <label>Contrat:</label>
-                        <input type="text" name="contrat" value={selectedOpe.contrat} onChange={handleInputChange} />
-                        <label>Début:</label>
-                        <input type="date" name="deb" value={selectedOpe.deb} onChange={handleInputChange} />
-                        <label>Fin:</label>
-                        <input type="date" name="fin" value={selectedOpe.fin} onChange={handleInputChange} />
-                        <label>Heures:</label>
-                        <input type="text" name="h_th_hebdo" value={selectedOpe.h_th_hebdo} onChange={handleInputChange} />
-                        <label>Responsable:</label>
-                        <input type="text" name="responsable" value={selectedOpe.responsable} onChange={handleInputChange} />
-                        <label>Activité par défaut:</label>
-                        <input type="text" name="id_activite_dft" value={selectedOpe.id_activite_dft} onChange={handleInputChange} />
-                        <div className="form-buttons">
-                            <button type="button" onClick={handleSave}>Enregistrer</button>
-                            <button type="button" onClick={() => setIsEditing(false)}>Annuler</button>
-                            <button type="button" onClick={handleDelete}>Supprimer</button>
-                        </div>
-                    </form>
+                <div>
+                    <div className="edit-form">
+                        <h3>&#128221; &bull; Modifier l'opérateur n°<u>{selectedOpe.matricule}</u> ?</h3>
+                        <form>
+                            <span>&#128100; NOM &bull; Prénom</span>
+                            <input type="text" placeholder="NOM" name="nom" value={selectedOpe.nom} onChange={handleInputChange} />
+                            <input type="text" placeholder="Prénom" name="prenom" value={selectedOpe.prenom} onChange={handleInputChange} />
+                            
+                            <span>&#127991;&#65039; Matricule</span>
+                            <input type="text" placeholder="Matricule" name="matricule" value={selectedOpe.matricule} onChange={handleInputChange} />
+                            
+                            <span>&#128189; Identifiant SAP (NG)</span>
+                            <input type="text" placeholder="Identifiant SAP (NG)" name="ng_sap" value={selectedOpe.ng_sap} onChange={handleInputChange} />
+                            
+                            <span>&#128195; Type de contrat</span>
+                            <select id="filtre" name="contrat" value={selectedOpe.contrat} onChange={handleInputChange} >
+                                <option value="CDI">CDI</option>
+                                <option value="CDD">CDD</option>
+                                <option value="Intérimaire">Intérimaire</option>
+                                <option value="Autres">Autres</option>
+                            </select>
+
+                            <span>&#128197; Date de début du contrat</span>
+                            <input type="date" name="deb" value={selectedOpe.deb} onChange={handleInputChange} />
+                            
+                            <span>&#128197; Date de fin du contrat</span>
+                            <input type="date" name="fin" value={selectedOpe.fin} onChange={handleInputChange} />
+                            
+                            <span>&#9202;&#65039; Heures Théoriques Hebdomadaires</span>
+                            <input type="number" name="h_th_hebdo" min="17" max="40" value={selectedOpe.h_th_hebdo} onChange={handleInputChange} />
+                            
+                            <span>&#129466; Responsable</span>
+                            <select id="filtre" name="responsable" value={selectedOpe.responsable} onChange={handleInputChange} >
+                                <option value="BONZANS.C">BONZANS Caroline</option>
+                                <option value="DA COSTA.E">DA COSTA Elodie</option>
+                                <option value="GASCOIN.L">GASCOIN Ludovic</option>
+                                <option value="JAUNAIS.F">JAUNAIS Fabrice</option>
+                                <option value="PELE.F">PELE Fabrice</option>
+                                <option value="PHILIPPE.H">PHILIPPE Hélène</option>
+                                <option value="RUSSON.D">RUSSON Delphine</option>
+                            </select>
+                            
+                            <span>&#128679; Activité par défaut</span>
+                            <select id="filtre" name="id_activite_dft" value={selectedOpe.id_activite_dft} onChange={handleInputChange} >
+                                <option value="Réception / Rangement / Expéditions">Réception / Rangement / Expéditions</option>
+                                <option value="Picking">Picking</option>
+                                <option value="Consolidation">Consolidation</option>
+                                <option value="Kardex">Kardex</option>
+                                <option value="Gestion ordonnancement">Gestion Ordonnancement</option>
+                                <option value="Tamaris">Tamaris</option>
+                                <option value="Quais Distribution">Quais Distribution</option>
+                            </select>
+                            
+                            <div className="form-buttons">
+                                <button type="button" onClick={() => setIsEditing(false)}>&#9664;&#65039; Annuler</button>
+                                <button type="button" onClick={handleDelete}>&#128465;&#65039; Supprimer</button>
+                                <button type="button" onClick={handleSave}>&#128190;Sauvegarder</button>
+                            </div>
+                        </form>
+                    </div>
+                    <span className="background-choix" onClick={() => setIsEditing(false)}/>
                 </div>
             )}
         </div>

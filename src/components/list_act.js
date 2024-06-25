@@ -72,7 +72,6 @@ function ListAct({ dataActi }) {
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Numéro BT</th>
                             <th>Activité</th>
                             <th>Sous-activité liée</th>
                             <th>Type</th>
@@ -84,7 +83,6 @@ function ListAct({ dataActi }) {
                             sortedData.map((item) => (
                                 <tr key={item.id}>
                                     <td>{item.id}</td>
-                                    <td>{item.num_bt || <span title="Cette activité n'a pas de Numéro BT &bull; Contacter CE">&#9888;&#65039;</span>}</td>
                                     <td>{item.activite}</td>
                                     <td>{item.ss_activite}</td>
                                     <td>{item.type}</td>
@@ -93,7 +91,7 @@ function ListAct({ dataActi }) {
                             ))
                         ) : (
                             <tr>
-                                <td colSpan="6">Sous-activité introuvable.</td>
+                                <td colSpan="5">Sous-activité introuvable.</td>
                             </tr>
                         )}
                     </tbody>

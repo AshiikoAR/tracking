@@ -4,6 +4,7 @@ import logo from '../img/tracking-icon.png';
 import daher from '../img/daher.png';
 import fond from '../img/fond.jpg';
 import DashboardCtrl from "./dashboard-ctrl";
+import DashboardOpe from "./dashboard-ope";
 
 function Conn({ dataOpe, dataActi }) {
   const [inputValue, setInputValue] = useState("");
@@ -48,7 +49,7 @@ function Conn({ dataOpe, dataActi }) {
             autoComplete="off"
             className="Mdp-conn"
             id="pin"
-            type="text"
+            type="password"
             minLength="1"
             maxLength="12"
             placeholder="&#127991;&#65039; &bull; Matricule ou NG SAP"
