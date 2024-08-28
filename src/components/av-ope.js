@@ -5,7 +5,7 @@ function Avancement() {
         <div>
             <div className="box-menu">
                 <div>
-                    <h2>&#128202; &bull; Liste des sous-activités réalisées</h2>
+                    <h2>Liste des sous-activités réalisées</h2>
                 </div>
                 <div className="loca-btn">
                     <input 
@@ -65,7 +65,7 @@ function Avancement() {
             </div>
             <div className="box-menu">
                 <div>
-                    <h2>&#8986; &bull; Avancement de la journée</h2>
+                    <h2>Avancement de la journée</h2>
                 </div>
                 <div className="progressbar-container" title="Bar de progression de l'avancement de la journée.">
                     <div className="progressbar-bar">xx %</div>

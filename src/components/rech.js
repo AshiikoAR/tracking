@@ -11,10 +11,10 @@ function Recherche({dataOpe, dataActi}) {
         <div>
             <div className="type_rech">
                 <button onClick={() => setShowList('ope')} className={showList === 'ope' ? 'active' : ''}>
-                    &#129466; &bull; Liste des opérateurs
+                    Liste des opérateurs
                 </button>
                 <button onClick={() => setShowList('act')} className={showList === 'act' ? 'active' : ''}>
-                    &#128679; &bull; Listes des activités
+                    Listes des activités
                 </button>
             </div>
             {showList === 'ope' && <ListOpe dataOpe={dataOpe} />}
